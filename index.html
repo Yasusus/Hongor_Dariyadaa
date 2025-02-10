@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink;
+            color: white;
+            padding: 50px;
+        }
+        .container {
+            background: #ff6b81;
+            padding: 50px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes { background: #ffcccb; color: #d32f2f; }
+        .no { background: #cccccc; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Миний Valentine болох уу хөөрхнөө? 💖</h1>
+        <img src="asking.gif" alt="ask"><br>
+        <button class="yes" onclick="goToPage('yes')">Тийм 💕</button>
+        <button class="no" onclick="goToPage('no')">Үгүэхх 💔</button>
+    </div>
+
+    <script>
+        function goToPage(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'yes.html';
+            } else {
+                window.location.href = 'no.html';
+            }
+        }
+    </script>
+</body>
+</html>

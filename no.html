@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e62828;
+            color: white;
+            padding: 50px;
+        }
+
+        .container {
+            background: #c0394e;
+            padding: 50px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes { background: #ffcccb; color: #d32f2f; }
+        .no { background: #cccccc; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Oh no... 🔪</h1>
+    <p>Болно зодно шүү.... 🤜🏼😡</p>
+    <img src="angry-cat.gif" alt="angry"> <br>
+    <button class="yes" onclick="goToPage('yes')">Заа.. 💕</button>
+</div>
+    <script>
+        function goToPage(answer) {
+            if (answer === 'yes') {
+                window.location.href = 'yes.html';
+            } else {
+                window.location.href = 'no.html';
+            }
+        }
+    </script>
+</body>
+</html>
